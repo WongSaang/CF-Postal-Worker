@@ -1,0 +1,10 @@
+name = "post2email-worker"
+compatibility_date = "2023-01-01"
+send_email = [
+    {type = "send_email", name = "SEB"}
+]
+
+[vars]
+SENDER_ADDRESS = ""
+SENDER_NAME = ""
+RECIPIENT_ADDRESS = ""
