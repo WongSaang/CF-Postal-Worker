@@ -42,3 +42,7 @@ npm run deploy
 
 - [Cloudflare](https://www.cloudflare.com/)
 - [Hono](https://hono.dev/) ，本项目基于该框架开发
+
+## 许可证
+
+本项目基于 MIT 许可证分发。更多信息请参见 [LICENSE](LICENSE)。

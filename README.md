@@ -42,3 +42,7 @@ npm run deploy
 
 - [Cloudflare](https://www.cloudflare.com/)
 - [Hono](https://hono.dev/), this project is developed based on this framework
+
+## License
+
+Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
