@@ -23,10 +23,12 @@ Use cases:
 SENDER_ADDRESS = "sender@example.com" # Set it to the email address you configured in Email Routing
 SENDER_NAME = "Sender" # Sender's name
 RECIPIENT_ADDRESS = "recipient@example.com" # Set it to your recipient email address
+ALLOWED_ORIGINS = "https://example.com" # The domain name of the site allowed to call the API, multiple domain names are separated by commas, "*" means all domain names are allowed.
 ```
 
 4. Deploy to Cloudflare Workers:
 ```bash
+npm install
 npm run deploy
 ```
 

@@ -23,10 +23,12 @@
 SENDER_ADDRESS = "sender@example.com" # 改成你在 Email Routing 中设置的邮箱地址一致
 SENDER_NAME = "Sender" # 发件人名称
 RECIPIENT_ADDRESS = "recipient@example.com" # 改成你的收件邮箱地址
+ALLOWED_ORIGINS = "https://example.com" # 允许调用 API 的站点域名，多个域名用逗号分隔, "*" 表示允许所有域名。
 ```
 
 4. 部署到 Cloudflare Workers
 ```bash
+npm install
 npm run deploy
 ```
 

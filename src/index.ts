@@ -1,8 +1,15 @@
 import { Hono } from 'hono'
+import { cors } from 'hono/cors'
 import { EmailMessage } from "cloudflare:email"
 import { createMimeMessage } from "mimetext"
 
 const app = new Hono()
+
+app.use('*', (c, next) => {
+    const origins = c.env.ALLOWED_ORIGINS === '*' ? '*' : c.env.ALLOWED_ORIGINS.split(',')
+    const cors_= cors({origin: origins})
+    return cors_(c, next)
+})
 
 app.post('/send', async (c) => {
     var subject = c.get('subject')
