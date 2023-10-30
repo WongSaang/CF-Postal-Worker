@@ -1,6 +1,7 @@
 {
   "scripts": {
     "dev": "wrangler dev src/index.ts",
+    "build": "wrangler deploy --dry-run --outdir=dist --minify src/index.ts",
     "deploy": "wrangler deploy --minify src/index.ts"
   },
   "dependencies": {
