@@ -38,6 +38,21 @@ npm run deploy
 |-----------|------|-----------------|--------------------------|
 | /send | POST | - subject 邮件主题<br>- body 邮件内容，可以是 html 字符串 | 发送邮件|
 
+### 示例
+
+```js
+fetch('https://example.workers.dev/send', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    subject: '邮件主题',
+    body: '<h1>邮件内容</h1>'
+  })
+})
+```
+
 ## 感谢
 
 - [Cloudflare](https://www.cloudflare.com/)

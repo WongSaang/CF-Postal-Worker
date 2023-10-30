@@ -38,6 +38,21 @@ npm run deploy
 |-----------|--------|--------------------|---------------------------|
 | /send     | POST   | - subject Email subject<br>- body Email content, can be an HTML string | Send an email |
 
+### Example
+
+```js
+fetch('https://example.workers.dev/send', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    subject: 'Email subject',
+    body: '<h1>Email content</h1>'
+  })
+})
+```
+
 ## Acknowledgments
 
 - [Cloudflare](https://www.cloudflare.com/)
