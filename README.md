@@ -14,6 +14,10 @@ Use cases:
 
 ## Deployment
 
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/YOURUSERNAME/YOURREPO)
+
+or
+
 1. Follow the instructions in [Enable Email Routing](https://developers.cloudflare.com/email-routing/get-started/enable-email-routing/) to enable Email Routing.
 
 2. Clone or download this project.
